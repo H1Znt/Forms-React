@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,600&family=Roboto+Condensed:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", serif;
+}
+
+.hex2rgb {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hex2rgb__body {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2c2c2;
+}
+
+.hex2rgb__content {
+  line-height: 50px;
+  text-align: center;
+}
+
+.hex2rgb__content > *:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.hex2rgb__input {
+  padding: 0 1rem;
+  font-weight: 800;
+  line-height: inherit;
+  letter-spacing: 1.2px;
+  text-align: inherit;
+  border-radius: 1rem;
+  color: rgb(92, 92, 92);
+  outline: solid 1px rgba(0, 0, 0, 0.3);
+  border: none;
+  
+}
+
+.hex2rgb__result {
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+  color: white;
+}
+
+.hex2rgb__result-wrap {
+  position: relative;
+  height: 50px;
+}
+
+.hex2rgb__result-wrap::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  outline: solid 1px rgba(224, 224, 224, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
